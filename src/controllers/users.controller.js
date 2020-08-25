@@ -67,7 +67,7 @@ usersCtrl.renderSigninForm = (req, res) => {
 };
 
 usersCtrl.signin = passport.authenticate("local", {
-    successRedirect: "/appointments/dashboard",
+    successRedirect: "/users/dashboard",
     failureRedirect: "/users/signin",
     failureFlash: true
 });
@@ -76,6 +76,11 @@ usersCtrl.logout = (req, res) => {
     req.logout();
     req.flash("success_msg", "You are logged out now.");
     res.redirect("/users/signin");
+};
+
+// dashboard
+usersCtrl.dashboard = (req, res) => {
+    res.render("users/dashboard");
 };
 
 // Details
