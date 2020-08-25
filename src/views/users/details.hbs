@@ -1,0 +1,292 @@
+<div class="mt-1">
+    <section class="card">
+        <div class="card-body">
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <h1 class="title_section">John Doe</h1>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="/users/details">
+                            <img src="/img/icons/user-icon.png" title="Patient Details">
+                        </a>
+                        <a href="/users/wallet">
+                            <img src="/img/icons/wallet-icon.png" title="Patient Wallet">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="card">
+        <div class="card-body">
+            <table style="width: 100%" cellpadding="10">
+                <tr>
+                    <th>Sex</h>
+                    <th>Email Address</th>
+                </tr>
+                <tr>
+                    <td>
+                        <!--<span id="sensitiveSex" class="sensitive">****</span>-->
+                        <span id="showSex" style="display: ">Male</span>
+                    </td>
+                    <td>
+                        <!--<span id="sensitiveEmail" class="sensitive">***@***.***</span>-->
+                        <span id="showEmail" style="display: ">john.doe@at.com</span>
+                    </td>
+                </tr>
+                <tr style="text-align: left;">
+                    <td colspan="3">
+                        <b>Special cares:</b> &nbsp;
+                        <a href="#" title="Care provider assistance" class="btn btn-primary rounded">Care provider assistance</a> &nbsp;
+                        <a href="#" title="Transport assistance" class="btn btn-primary rounded">Transport assistance</a>
+                    </td>
+                </tr>
+            </table><br>
+            <script type="text/javascript">
+                /*$("#sensitiveDOB").mouseover(function() {
+                    $("#sensitiveDOB").hide();
+                    $("#showDOB").show();
+                }).mouseout(function() {
+                    $("#sensitiveDOB").show();
+                    $("#showDOB").hide();
+                });
+
+                $("#sensitiveSSN").mouseover(function() {
+                    $("#sensitiveSSN").hide();
+                    $("#showSSN").show();
+                }).mouseout(function() {
+                    $("#sensitiveSSN").show();
+                    $("#showSSN").hide();
+                });
+
+                $("#sensitiveSex").mouseover(function() {
+                    $("#sensitiveSex").hide();
+                    $("#showSex").show();
+                }).mouseout(function() {
+                    $("#sensitiveSex").show();
+                    $("#showSex").hide();
+                });
+
+                $("#sensitiveEmail").mouseover(function() {
+                    $("#sensitiveEmail").hide();
+                    $("#showEmail").show();
+                }).mouseout(function() {
+                    $("#sensitiveEmail").show();
+                    $("#showEmail").hide();
+                });
+
+                $("#sensitiveInsurance").mouseover(function() {
+                    $("#sensitiveInsurance").hide();
+                    $("#showInsurance").show();
+                }).mouseout(function() {
+                    $("#sensitiveInsurance").show();
+                    $("#showInsurance").hide();
+                });*/
+            </script>
+
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <h2>
+                            Addresses
+                            <img src="/img/icons/help-icon.png" title="Info about Addresses"
+                                data-toggle="tooltipAddresses" data-placement="right" title="Addresses Info"
+                                class="icons">
+                        </h2>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('[data-toggle="tooltipAddresses"]').tooltip()
+                            });
+                        </script>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#" data-toggle="modal" data-target="#staticBackdropAddress">
+                            <img src="/img/icons/plus-icon.png" title="Add" class="icons">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="card">
+        <div class="card-body">
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Home</b><br>
+                        <p>2502 N Rocky Point Dr #900, Tampa, FL 33607, USA. +1 901-123-1234</p>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/edit-icon.png" title="Edit" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/delete-icon.png" title="Delete" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: left;">
+                        <!--Google map-->
+                        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 450px;">
+                            <iframe src="https://maps.google.com/maps?q=2502+N+Rocky+Point+Dr+%23900,+Tampa,+FL+33607,+EE.+UU&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <!--Google Maps-->
+                    </td>
+                </tr>
+            </table><br>
+
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <h2>
+                            Phones
+                            <img src="/img/icons/help-icon.png" title="Info about Phones" data-toggle="tooltipPhones"
+                                data-placement="right" title="Phones Info" class="icons">
+                        </h2>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('[data-toggle="tooltipPhones"]').tooltip()
+                            });
+                        </script>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#" data-toggle="modal" data-target="#staticBackdropPhone">
+                            <img src="/img/icons/plus-icon.png" title="Add" class="icons">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="card">
+        <div class="card-body">
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Home</b> +1 901-123-1234
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/edit-icon.png" title="Edit" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/delete-icon.png" title="Delete" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Cell</b> +1 901-123-1234
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/edit-icon.png" title="Edit" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/delete-icon.png" title="Delete" class="icons">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>
+
+<!-- Modal Add Phone -->
+<div class="modal fade" id="staticBackdropPhone" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabelPhone" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="vertical-align: middle;">
+                <h3 class="modal-title" id="staticBackdropLabelPhone" style="font-weight: 400;">Phone</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <section class="my-2">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="text-align: left;">
+                                <div class="form-group">
+                                    <label for="type">Type</label>
+                                    <select class="form-control" name="type" id="type" placeholder="Type" autofocus>
+                                        <option value="1">Home</option>
+                                        <option value="2">Mobile</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="1-(555)-555-5555">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary rounded">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Add Phone -->
+
+<!-- Modal Add Address -->
+<div class="modal fade" id="staticBackdropAddress" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabelAddress" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="vertical-align: middle;">
+                <h3 class="modal-title" id="staticBackdropLabelAddress" style="font-weight: 400;">Address</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <section class="my-2">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group" style="text-align: right;">
+                            <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary rounded">Save</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Add Address -->

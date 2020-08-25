@@ -11,12 +11,6 @@ h1.title_section {
     font-weight: 400;
 }
 
-.navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
-    font-weight: 600;
-}
-
 .icons {
     width: 21px;
 }
@@ -26,7 +20,7 @@ h1.title_section {
 }
 
 .help_icon {
-    background-image: url(public/img/help-icon.png);
+    background-image: url(public/img/icons/help-icon.png);
     width: 21px;
 }
 

@@ -1,0 +1,113 @@
+<a class="btn btn-primary" href="/admin">&laquo; Admin Menu</a><br><br>
+
+<section class="card">
+    <div class="card-body">
+        <table style="width: 100%">
+            <tr>
+                <td style="text-align: left;">
+                    <h1 class="title_section">Reports</h1>
+                </td>
+                <td style="text-align: right">
+                    <script>
+                        $(function () {
+                            var dateFormat = "mm/dd/yy",
+                                from = $("#from")
+                                    .datepicker({
+                                        defaultDate: "+1w",
+                                        changeMonth: true,
+                                        numberOfMonths: 3
+                                    })
+                                    .on("change", function () {
+                                        to.datepicker("option", "minDate", getDate(this));
+                                    }),
+                                to = $("#to").datepicker({
+                                    defaultDate: "+1w",
+                                    changeMonth: true,
+                                    numberOfMonths: 3
+                                })
+                                    .on("change", function () {
+                                        from.datepicker("option", "maxDate", getDate(this));
+                                    });
+
+                            function getDate(element) {
+                                var date;
+                                try {
+                                    date = $.datepicker.parseDate(dateFormat, element.value);
+                                } catch (error) {
+                                    date = null;
+                                }
+
+                                return date;
+                            }
+                        });
+                    </script>
+
+                    <label for="from">From</label>
+                    <input type="text" id="from" name="from">
+                    <label for="to">to</label>
+                    <input type="text" id="to" name="to">
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- SUMMARY DETAILS -->
+{{> summary }}
+<!-- SUMMARY DETAILS -->
+
+<section class="card">
+    <div class="card-body">
+        <table style="width: 100%">
+            <tr>
+                <td style="text-align: center; vertical-align: top;">
+                    <!--<div id="canvas-holder" style="width:40%">
+                        <canvas id="chart-area"></canvas>
+                    </div>
+                    <script>
+                    </script>-->
+                    <img class="mx-auto d-block reports_img m-4" src="/img/reports-appointments.PNG" alt="">
+                </td>
+                <td style="text-align: center; vertical-align: top;">
+                    <img class="mx-auto d-block reports_img m-4" src="/img/reports-appointments-by-date.PNG" alt="">
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section class="card">
+    <div class="card-body">
+        <table style="width: 100%">
+            <tr>
+                <td style="text-align: left;">
+                    <a href="/reports/example.xls">Historical Appointments</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    <a href="/admin/reports/example">Historical Timeshets</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    <a href="/admin/reports/example">Historical Care Providers</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    <a href="/admin/reports/example">Historical Patients</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    <a href="/admin/reports/example">Historical Insurance</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    <a href="/admin/reports/example">Appointments vs Timesheets</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>

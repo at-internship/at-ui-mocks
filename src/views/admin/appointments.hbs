@@ -1,0 +1,188 @@
+<a class="btn btn-primary" href="/admin">&laquo; Admin Menu</a><br><br>
+
+<ul class="nav nav-tabs" id="nav-tab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="search-tab-md" data-toggle="tab" href="#search-md" role="tab"
+            aria-controls="search-md" aria-selected="true">Search</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="scheduling-tab-md" data-toggle="tab" href="#scheduling-md" role="tab"
+            aria-controls="scheduling-md" aria-selected="false">Scheduling</a>
+    </li>
+</ul>
+
+<div class="tab-content card" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="search-md" role="tabpanel" aria-labelledby="search-tab-md">
+        <!-- Appointments Search -->
+        <section class="card">
+            <div class="card-body">
+                <table style="width: 100%">
+                    <tr>
+                        <td style="text-align: left;">
+                            <h1 class="title_section">Appointments Search</h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- SUMMARY DETAILS -->
+        {{> summary }}
+        <!-- SUMMARY DETAILS -->
+
+        <section class="card">
+            <div class="card-body">
+                <table id="appoitmentsTable" class="display responsive nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Client</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Care Provider</th>
+                            <th>Time</th>
+                            <th>Insurance</th>
+                            <th>Services</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Due</td>
+                            <td>510 Park Av, Ny.</td>
+                            <td>+1 901-123-1234</td>
+                            <td>Care Provider 1</td>
+                            <td>8:00 am - 11:00 am</td>
+                            <td>Medicaid</td>
+                            <td>Bathing</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash" style="color:red"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('#appoitmentsTable').DataTable();
+                    });
+                </script>
+            </div>
+        </section>
+        <!-- Appointments Search -->
+    </div>
+    <div class="tab-pane fade" id="scheduling-md" role="tabpanel" aria-labelledby="scheduling-tab-md">
+        <!-- Appointments Scheduling -->
+        <section class="card">
+            <div class="card-body">
+                <table style="width: 100%">
+                    <tr>
+                        <td style="text-align: left;">
+                            <h1 class="title_section">Appointments Scheduling</h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="card">
+            <div class="card-body">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="vertical-align: top; text-align: left;">
+                            <!-- search -->
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="vertical-align: top; text-align: left;">
+                                        <h3 style="font-weight: 400;">Care Provider</h3>
+                                        <input type="text" class="form-control-admin-service" placeholder="Type here...">
+                                        <br>
+                                        <p>Care Provider 1 - Agency 1</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top; text-align: left;">
+                                        <h3 style="font-weight: 400;">Patient</h3>
+                                        <input type="text" class="form-control-admin-service" placeholder="Type here...">
+                                        <br>
+                                        <p>John Due (Medicaid) - 510 Park Av, Ny. +1 901-123-1234</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- search -->
+                        </td>
+                        <td style="vertical-align: top; text-align: left;">
+                            <!-- services -->
+                            <h3 style="font-weight: 400;">Services</h3>
+                            <input type="text" class="form-control-admin-service" placeholder="Type here...">
+                            <br>
+                            <table>
+                                <tr>
+                                    <td style="text-align: left;">
+                                        <a href="#" class="btn btn-primary rounded">Feeding</a>
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <a href="#">
+                                            <img src="/img/icons/delete-icon.png" title="Delete Service" class="icons">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">
+                                        <a href="#" class="btn btn-primary rounded">Dr Appointment</a>
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <a href="#">
+                                            <img src="/img/icons/delete-icon.png" title="Delete Service" class="icons">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br>
+                            <div class="input-group-admin-service">
+                                <label for="timepickerToFilter">From</label>
+                                <div class="c-datepicker-date-editor c-datepicker-single-editor filterFrom w-100">
+                                    <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+                                    <input type="text" autocomplete="off" name="appointment[from]"
+                                        placeholder="Select" class="c-datepicker-data-input only-date "
+                                        value="" id="timepickerFromAppointment" style="width: 200px;">
+                                </div>
+                                <label for="timepickerToFilter">To</label>
+                                <div class="c-datepicker-date-editor c-datepicker-single-editor filterFrom w-100">
+                                    <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+                                    <input type="text" autocomplete="off" name="appointment[to]"
+                                        placeholder="Select" class="c-datepicker-data-input only-date "
+                                        value="" id="timepickerToAppointment">
+                                </div>
+                            </div>
+                            <!-- services -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="vertical-align: top; text-align: center;">
+                            <br>
+                            <!--div id="datepickerAppointment"></div-->
+                            <script type="text/javascript">
+                                var today = new Date();
+                                var y = today.getFullYear();
+                                $('#datepickerAppointment').multiDatesPicker({
+                                    addDates: ['10/14/'+y, '02/19/'+y, '01/14/'+y, '11/16/'+y],
+                                    numberOfMonths: [3,4],
+                                    defaultDate: '1/1/'+y
+                                });
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="vertical-align: top; text-align: right;">
+                            <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary rounded">Save</button>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <img class="mx-auto d-block calendar_img m-4" src="/img/calendar.PNG" alt="">
+            </div>
+        </section>
+        <!-- Appointments Scheduling -->
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<table id="usersTable" class="display responsive nowrap" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{name}} {{firstName}} {{lastName}}</td>
+            <td>{{type}}</td>
+            <td>{{email}}</td>
+            <td>
+                <a href="/users/edit/{{_id}}"><i class="fas fa-edit"></i></a>
+                <a href="/users/delete/{{_id}}"><i class="fas fa-trash" style="color:red"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#usersTable').DataTable();
+    });
+</script>

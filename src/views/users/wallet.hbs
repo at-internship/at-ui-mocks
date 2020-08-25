@@ -1,0 +1,485 @@
+<div class="mt-1">
+    <section class="card">
+        <div class="card-body">
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <h1 class="title_section">
+                            John Doe 
+                            <span class="amount">$1022.75</span>
+                            <img src="/img/icons/help-icon.png" 
+                                 title="Info about Total Amount" 
+                                 data-toggle="tooltipTotal" 
+                                 data-placement="right" 
+                                 title="Total Amount Info" 
+                                 class="icons">
+                        </h1>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('[data-toggle="tooltipTotal"]').tooltip()
+                            });
+                        </script>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="/users/details">
+                            <img src="/img/icons/user-icon.png" title="Client Details">
+                        </a>
+                        <a href="/users/wallet">
+                            <img src="/img/icons/wallet-icon.png" title="Client Wallet">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="card">
+        <div class="card-body">
+            <table style="width: 100%">
+                <tr>
+                    <th>Last Invoiced On</th>
+                    <th>Status</th>
+                    <th>Total Due</h>
+                </tr>
+                <tr>
+                    <td>1/31/2020</td>
+                    <td>Waiting for payment</td>
+                    <td>$897.75</td>
+                </tr>
+            </table><br>
+            
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <h2>
+                            Rates 
+                            <img src="/img/icons/help-icon.png" 
+                                 title="Info about Rates" 
+                                 data-toggle="tooltipRates" 
+                                 data-placement="right" 
+                                 title="Rates Info" 
+                                 class="icons">
+                        </h2>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('[data-toggle="tooltipRates"]').tooltip()
+                            });
+                        </script>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#" data-toggle="modal" data-target="#staticBackdropRates">
+                            <img src="/img/icons/plus-icon.png" title="Add" class="icons">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="card">
+        <div class="card-body">
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Hours Limit</b> 1
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Cost per hour</b> $80.00
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/edit-icon.png" title="Edit" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/delete-icon.png" title="Delete" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Hours Limit</b> 5
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Cost per hour</b> $70.00
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/edit-icon.png" title="Edit" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/delete-icon.png" title="Delete" class="icons">
+                        </a>
+                    </td>
+                </tr>
+            </table><br>
+            
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <h2>
+                            Invoices 
+                            <img src="/img/icons/help-icon.png" 
+                                 title="Info about Invoices" 
+                                 data-toggle="tooltipInvoices" 
+                                 data-placement="right" 
+                                 title="Invoices Info" 
+                                 class="icons">
+                        </h2>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('[data-toggle="tooltipInvoices"]').tooltip()
+                            });
+                        </script>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#" data-toggle="modal" data-target="#staticBackdropInvoices">
+                            <img src="/img/icons/plus-icon.png" title="Add" class="icons">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="card">
+        <div id="invoicesList" class="card-body scroll-wrapper-div">
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 2/29/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Not generated
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $125.00
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 1/31/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Waiting for payment
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $897.75
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 12/31/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Paid
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $912.00
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 11/30/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Paid
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $1027.15
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 2/29/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Not generated
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $125.00
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 1/31/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Waiting for payment
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $897.75
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 12/31/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Paid
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $912.00
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 11/30/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Paid
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $1027.15
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 1/31/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Waiting for payment
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $897.75
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 12/31/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Paid
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $912.00
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <b>Invoice Date</b> 11/30/2020
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Status</b> Paid
+                    </td>
+                    <td style="text-align: left;">
+                        <b>Total Amount</b> $1027.15
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="#">
+                            <img src="/img/icons/clock-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/view-icon.png" title="" class="icons">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icons/play-icon.png" title="" class="icons">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>
+
+<!-- Modal Add Rates -->
+<div class="modal fade" id="staticBackdropRates" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabelRates" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="vertical-align: middle;">
+                <h3 class="modal-title" id="staticBackdropLabelRates" style="font-weight: 400;">Rates</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <section class="my-2">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="text-align: left;">
+                                <div class="form-group">
+                                    <label for="hours">Hours Limit</label>
+                                    <input type="text" class="form-control" id="hours" placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cost">Cost per hour</label>
+                                    <input type="text" class="form-control" id="cost" placeholder="0.00">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary rounded">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Add Rates -->
+
+<!-- Modal Add Invoice -->
+<div class="modal fade" id="staticBackdropInvoices" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabelInvoices" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="vertical-align: middle;">
+                <h3 class="modal-title" id="staticBackdropLabelInvoices" style="font-weight: 400;">Invoice</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <section class="my-2">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="text-align: left;">
+                                <div class="form-group">
+                                    <label for="datepicker">Invoice Date</label>
+                                    <input type="text" class="form-control" id="datepicker">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="status">Status</label>
+                                    <select class="form-control" name="type" id="status" placeholder="Status" autofocus>
+                                        <option value="1">Not Generated</option>
+                                        <option value="2">Wayting for payment</option>
+                                        <option value="3">Paid</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="amount">Total Amount</label>
+                                    <input type="text" class="form-control" id="amount" placeholder="0.00">
+                                </div>
+                                <script type="text/javascript">
+                                    $('#datepicker').datepicker({
+                                        uiLibrary: 'bootstrap4'
+                                    });
+                                </script>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary rounded">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Add Invoices -->
