@@ -6,7 +6,7 @@ const {
     renderSigninForm,
     signin,
     logout,
-    dashboard,
+    home,
     details,
     wallet,
     updateUser
@@ -25,8 +25,8 @@ router.post("/signin", signin);
 // Logout
 router.get("/logout", logout);
 
-// Logout
-router.get("/dashboard", dashboard);
+// Home
+router.get("/home", home);
 
 // Add User
 router.get("/signup", renderSignUpForm);

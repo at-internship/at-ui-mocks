@@ -78,9 +78,9 @@ usersCtrl.logout = (req, res) => {
     res.redirect("/users/signin");
 };
 
-// dashboard
-usersCtrl.dashboard = (req, res) => {
-    res.render("users/dashboard");
+// Home
+usersCtrl.home = (req, res) => {
+    res.render("users/home");
 };
 
 // Details
