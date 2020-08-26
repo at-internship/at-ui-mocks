@@ -55,6 +55,9 @@ app.use("/users", require("./routes/users.routes"));
 app.use("/notes", require("./routes/notes.routes"));
 app.use("/admin", require("./routes/admin.routes"));
 
+app.use("/at-university", require("./routes/at-university.routes"));
+app.use("/at-resources", require("./routes/at-resources.routes"));
+
 // Static files
 app.use(express.static(path.join(__dirname, "public")));
 
