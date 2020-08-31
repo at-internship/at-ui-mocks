@@ -25,7 +25,7 @@ app.engine(
 );
 app.set("view engine", ".hbs");
 
-// Middlewares (Funciones que se van a ejecutando a medida que llegan al server)
+// Middlewares (Funciones que se van ejecutando a medida que llegan al server)
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true })); // Tratar datos de formulario como json
 app.use(methodOverride("_method"));

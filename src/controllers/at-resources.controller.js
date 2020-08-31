@@ -11,4 +11,14 @@ resourcesCtrl.dashboard = (req, res) => {
     res.render("at-resources/dashboard");
 };
 
+// Backlog
+resourcesCtrl.backlog = (req, res) => {
+    res.render("at-resources/backlog");
+};
+
+// Active Sprint
+resourcesCtrl.activeSprint = (req, res) => {
+    res.render("at-resources/activeSprint");
+};
+
 module.exports = resourcesCtrl;

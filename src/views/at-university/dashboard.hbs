@@ -1,6 +1,26 @@
 <div class="jumbotron mt-1">
     <div class="container" style="text-align: center;">
 
+        <!-- My Skills -->
+        <section class="card">
+            <div class="card-body">
+                <table style="width: 100%">
+                    <tr>
+                        <td style="text-align: left;">
+                            <div class="container">
+                                <h3 class="title_section">My Skills</h3>
+                                <span class="badge badge-pill badge-primary">Node JS</span>
+                                <span class="badge badge-pill badge-primary">J2EE</span>
+                                <span class="badge badge-pill badge-primary">spring-boot</span>
+                                <span class="badge badge-pill badge-primary">Microservices</span><br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section><br>
+        <!-- My Skills -->
+
         <!-- AT PATH CAREERS -->
         <section class="card">
             <div class="card-body">
@@ -248,5 +268,33 @@
         </section>
         <!-- COURSES PAGINATION -->
         <!-- COURSES RESULTS -->
+
+        <section class="card">
+            <div class="card-body">
+                <table style="width: 100%">
+                    <tr>
+                        <td style="text-align: left;">
+                            <div class="container">
+                                <h2> Microservice call</h2>
+                                <div class="row my-2">
+                                    {{#each tutorials}}
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h4 class="card-title d-flex justify-content-between align-items-center">
+                                                        {{title}}
+                                                    </h4>
+                                                    <p>{{description}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
     </div>
 </div>
