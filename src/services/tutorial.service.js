@@ -1,7 +1,10 @@
 const axios = require("axios");
 
-require("dotenv").config();
-//const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI || `http: //localhost:8080/api`;
+// LOCAL
+//require("dotenv").config();
+//const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI || `http: //localhost:8080/api`
+
+// PROD
 const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI;
 console.log("TUTORIAL_SERVICE_URI:" + TUTORIAL_SERVICE_URI);
 
