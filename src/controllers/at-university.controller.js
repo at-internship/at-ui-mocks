@@ -8,18 +8,19 @@ const tutorialServiceAPI = require('../services/tutorial.service');
 // Modules
 const passport = require("passport");
 
-// Dashboard
-universityCtrl.dashboard = (req, res) => {
+// Dashboard - LOCAL
+/*universityCtrl.dashboard = (req, res) => {
     res.render("at-university/dashboard");
-};
+};*/
 
-/*universityCtrl.dashboard = async(req, res) => {
+// Dashboard - PROD
+universityCtrl.dashboard = async(req, res) => {
     const responseTutorials = await tutorialServiceAPI.getAllTutorials();
     console.log("---> Tutorials");
     console.log(responseTutorials.data);
     const tutorials = responseTutorials.data
     res.render("at-university/dashboard", { tutorials });
-};*/
+};
 
 // Career details
 universityCtrl.careerDetails = (req, res) => {
