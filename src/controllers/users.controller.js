@@ -58,7 +58,7 @@ usersCtrl.singup = async(req, res) => {
 };
 
 usersCtrl.updateUser = (req, res) => {
-    console.log(req.body);
+    //console.log(req.body);
     res.send("Updating user");
 }
 

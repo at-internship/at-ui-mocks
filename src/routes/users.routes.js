@@ -13,6 +13,7 @@ const {
 } = require("../controllers/users.controller");
 
 const { isAdmin, isCareProvider } = require('../helpers/auth');
+
 /* Routes */
 
 // Get All Users

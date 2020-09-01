@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const { dashboard, backlog, activeSprint } = require("../controllers/at-resources.controller.js");
+const { dashboard, backlog, activeSprint, tests } = require("../controllers/at-resources.controller.js");
 
 const { isAdmin, isCareProvider } = require("../helpers/auth");
 
@@ -14,5 +14,8 @@ router.get("/backlog", backlog);
 
 // Active Sprint
 router.get("/activeSprint", activeSprint);
+
+router.get("/test", tests);
+
 
 module.exports = router;

@@ -21,4 +21,8 @@ resourcesCtrl.activeSprint = (req, res) => {
     res.render("at-resources/activeSprint");
 };
 
+resourcesCtrl.tests = (req, res) => {
+    res.render("at-resources/test");
+};
+
 module.exports = resourcesCtrl;
