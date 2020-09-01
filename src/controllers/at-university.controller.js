@@ -1,8 +1,5 @@
 const universityCtrl = {};
 
-// Models
-//const User = require('../models/User');
-
 const tutorialServiceAPI = require('../services/tutorial.service');
 
 // Modules

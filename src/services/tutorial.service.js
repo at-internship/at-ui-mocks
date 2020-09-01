@@ -6,6 +6,7 @@ const axios = require("axios");
 
 // PROD
 const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI;
+
 console.log("TUTORIAL_SERVICE_URI:" + TUTORIAL_SERVICE_URI);
 
 module.exports = {
