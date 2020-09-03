@@ -5,19 +5,19 @@ const tutorialServiceAPI = require('../services/tutorial.service');
 // Modules
 const passport = require("passport");
 
-// Dashboard - LOCAL
-universityCtrl.dashboard = (req, res) => {
-    res.render("at-university/dashboard");
+// Dashboard
+universityCtrl.dashboard = async(req, res) => {
+    try {
+        const responseTutorials = await tutorialServiceAPI.getAllTutorials();
+        console.log("---> universityCtrl.dashboard.getAllTutorials");
+        console.log(responseTutorials.data);
+        const tutorials = responseTutorials.data
+        res.render("at-university/dashboard", { tutorials });
+    } catch (err) {
+        console.error(err.message)
+        res.render("at-university/dashboard");
+    }
 };
-
-// Dashboard - PROD
-/*universityCtrl.dashboard = async(req, res) => {
-    const responseTutorials = await tutorialServiceAPI.getAllTutorials();
-    console.log("---> Tutorials");
-    console.log(responseTutorials.data);
-    const tutorials = responseTutorials.data
-    res.render("at-university/dashboard", { tutorials });
-};*/
 
 // Career details
 universityCtrl.careerDetails = (req, res) => {

@@ -1,3 +1,4 @@
+// App file
 const app = require("./server");
 
 // Run app

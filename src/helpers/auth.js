@@ -1,3 +1,4 @@
+// Additional helpers to handlebars
 const helpers = {};
 
 helpers.isAuthenticated = (req, res, next) => {
