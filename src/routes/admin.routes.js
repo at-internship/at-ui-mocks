@@ -1,41 +1,41 @@
 const express = require("express");
 const router = express.Router();
 const path = require('path');
+
+// Admin Controller
 const {
     renderIndex,
-    renderAppointments,
-    renderCareProviders,
-    renderPatients,
-    renderInsurances,
-    renderReports
+    renderUserList,
+    renderAddUserForm,
+    addUser,
+    renderEditUserForm,
+    updateUser,
+    deleteUser
 } = require("../controllers/admin.controller");
 
 // Helpers
 const { isAdmin } = require("../helpers/auth");
 
+// ============= Sub Routes =============
 
-/* Routes */
-
-// Index
+// AT-SSO - Admin - Index
 router.get("/", isAdmin, renderIndex);
 
-// Appointments
-router.get("/appointments", isAdmin, renderAppointments);
 
-// Care Providers
-router.get("/careproviders", isAdmin, renderCareProviders);
+// AT-SSO - Admin - Users - Render User List
+router.get("/user", isAdmin, renderUserList);
 
-// Patients
-router.get("/patients", isAdmin, renderPatients);
+// AT-SSO - Admin - Users - Render Add User Form
+router.get("/user/add", renderAddUserForm);
+// AT-SSO - Admin - Users - Add User
+router.post("/user/add", addUser);
 
-// Insurances
-router.get("/insurances", isAdmin, renderInsurances);
+// AT-SSO - Admin - Users - Render Edit User Form
+router.get("/user/edit/:id", renderEditUserForm);
+// AT-SSO - Admin - Users - Edit User
+router.put("/user/edit/:id", updateUser);
 
-// Reports
-router.get("/reports", isAdmin, renderReports);
-router.get('/reports/example', function(req, res) {
-    const file = path.join(__dirname, '../public/reports/example.xls');
-    res.download(file); // Set disposition and send it.
-});
+// AT-SSO - Admin - Users - Delete User
+router.get("/user/delete/:id", deleteUser);
 
 module.exports = router;

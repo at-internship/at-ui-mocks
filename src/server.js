@@ -54,9 +54,14 @@ app.use((req, res, next) => {
 app.use("/", require("./routes/index.routes"));
 app.use("/users", require("./routes/users.routes"));
 app.use("/notes", require("./routes/notes.routes"));
+
+// AT-SSO - Admin
 app.use("/admin", require("./routes/admin.routes"));
 
+// AT-University
 app.use("/at-university", require("./routes/at-university.routes"));
+
+// AT-Resources
 app.use("/at-resources", require("./routes/at-resources.routes"));
 
 // Static files

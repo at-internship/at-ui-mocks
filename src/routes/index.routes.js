@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const router = Router();
 
-// Controllers
+// Controller & Actions
 const { renderIndex, renderAbout, renderNotifications } = require("../controllers/index.controller");
 
 router.get('/', renderIndex);

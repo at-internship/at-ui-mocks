@@ -1,11 +1,12 @@
 const axios = require("axios");
 
 // LOCAL
-//require("dotenv").config();
+require("dotenv").config();
 //const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI || `http: //localhost:8080/api`;
-// PROD
-const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI;
+const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI || `https://at-mock-services-api.herokuapp.com/api`;
 
+// PROD
+//const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI;
 console.log("TUTORIAL_SERVICE_URI:" + TUTORIAL_SERVICE_URI);
 
 module.exports = {

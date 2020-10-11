@@ -5,7 +5,7 @@ const {
     singup,
     renderSigninForm,
     signin,
-    logout,
+    signout,
     home,
     details,
     wallet,
@@ -24,7 +24,7 @@ router.get("/signin", renderSigninForm);
 router.post("/signin", signin);
 
 // Logout
-router.get("/logout", logout);
+router.get("/signout", signout);
 
 // Home
 router.get("/home", home);
