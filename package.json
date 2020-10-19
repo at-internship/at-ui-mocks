@@ -7,6 +7,10 @@
         "start": "node src/index.js",
         "dev": "nodemon src/index.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/at-internship/at-ui-mocks.git"
+    },
     "keywords": [],
     "author": "AgileThought",
     "license": "ISC",
@@ -29,5 +33,8 @@
         "handlebars": "^4.7.6",
         "nodemon": "^2.0.4",
         "npm-check-updates": "^9.0.4"
+    },
+    "engines": {
+        "node": "10.x"
     }
 }
