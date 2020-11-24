@@ -1,16 +1,25 @@
+// AT University Controller
 const universityCtrl = {};
 
+// AT University Service
 const tutorialServiceAPI = require('../services/at-university.service');
 
 // Modules
 const passport = require("passport");
 
-// Dashboard
+/**
+ * Controller method to handle view render for Dashboard section.
+ * 
+ * @param  {req} req  Request object
+ * @param  {res} res  Response object
+ * @return {Promise<any>} Render hablebars view
+ * @abstract
+ */
 universityCtrl.dashboard = async(req, res) => {
     try {
         const responseTutorials = await tutorialServiceAPI.getAllTutorials();
         console.log("---> universityCtrl.dashboard.getAllTutorials");
-        console.log(responseTutorials.data);
+        //console.log(responseTutorials.data);
         const tutorials = responseTutorials.data
         res.render("at-university/dashboard", { tutorials });
     } catch (err) {

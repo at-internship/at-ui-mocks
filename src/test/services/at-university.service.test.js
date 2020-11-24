@@ -1,12 +1,17 @@
-let chai = require('chai');
-let chaiHttp = require('chai-http');
+// Constants
+const chai = require('chai');
+const chaiHttp = require('chai-http');
 const expect = require('chai').expect;
-
 chai.use(chaiHttp);
 
+// AT University Service API
 const tutorialServiceAPI = 'https://at-university-api.herokuapp.com/api' + '/v1/course';
 const tutorialServiceAPI_400 = 'https://at-university-api.herokuapp.com/api' + '/v1/courses';
 
+/**
+ * AT University Service Integration Test
+ * 
+ */
 describe('INTEGRATION TEST: at-univeristy.service', () => {
 
     it('Should Get All Courses - 200', (done) => {

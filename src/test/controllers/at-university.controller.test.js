@@ -1,11 +1,19 @@
+// Constants
 const sinon = require("sinon");
 const chai = require("chai");
 const expect = require("chai").expect;
 const assert = require("assert");
 
+// AT University Controller
 const universityController = require("../../controllers/at-university.controller");
+
+// AT University Service API
 const universityServiceAPI = require("../../services/at-university.service");
 
+/**
+ * AT University Controller Unit Test
+ * 
+ */
 describe('TEST: at-univeristy.controller', () => {
 
     let getAllCoursesStub;

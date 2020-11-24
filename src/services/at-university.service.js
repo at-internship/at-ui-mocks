@@ -1,4 +1,13 @@
+/**
+ * AT UI MOCKS
+ * 
+ * Tutorial Service API.
+ * 
+ */
+
+// Constants
 const axios = require("axios");
+const atCourseServiceAPI = {};
 
 // LOCAL
 //require("dotenv").config();
@@ -9,20 +18,18 @@ const axios = require("axios");
 const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI;
 console.log("TUTORIAL_SERVICE_URI:" + TUTORIAL_SERVICE_URI);
 
-module.exports = {
-    getAllTutorials: () =>
-        axios({
-            method: "GET",
-            url: TUTORIAL_SERVICE_URI + `/tutorials`,
-            headers: {
-                "content-type": "application/json",
-            },
-        })
-        /*.then(function() {
-                    //console.log('Success ' + JSON.stringify(data))
-                    console.log("getAllTutorials: " + TUTORIAL_SERVICE_URI + `/tutorials`);
-                })*/
-        .catch(function(error) {
-            console.log('Error: ' + error.message)
-        }),
+/**
+ * Function to retrieve All Tutorials from Tutorial Service API.
+ * 
+ */
+atCourseServiceAPI.getAllTutorials = () => {
+    return axios({
+        method: "GET",
+        url: AT_UNIVERSITY_SERVICE_URI + `/v1/course`,
+        headers: {
+            "content-type": "application/json",
+        }
+    });
 };
+
+module.exports = courseService;
