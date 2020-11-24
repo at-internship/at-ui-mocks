@@ -7,7 +7,8 @@ chai.use(chaiHttp);
 const tutorialServiceAPI = 'https://at-university-api.herokuapp.com/api' + '/v1/course';
 const tutorialServiceAPI_400 = 'https://at-university-api.herokuapp.com/api' + '/v1/courses';
 
-describe('Get All Courses - 200: ', () => {
+describe('INTEGRATION TEST: at-univeristy.service', () => {
+
     it('Should Get All Courses - 200', (done) => {
         chai.request(tutorialServiceAPI)
             .get('/')
@@ -20,9 +21,7 @@ describe('Get All Courses - 200: ', () => {
                 done();
             });
     });
-});
 
-describe('Get All Courses - 400: ', () => {
     it('Should Fail Get All Courses - 400', (done) => {
         chai.request(tutorialServiceAPI_400)
             .get('/')
@@ -46,4 +45,5 @@ describe('Get All Courses - 400: ', () => {
                 done();
             });
     });
+
 });

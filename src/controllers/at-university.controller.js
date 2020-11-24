@@ -20,17 +20,17 @@ universityCtrl.dashboard = async(req, res) => {
 };
 
 // Career details
-universityCtrl.careerDetails = (req, res) => {
+universityCtrl.careerDetails = async(req, res) => {
     res.render("at-university/careers/details");
 };
 
 // Course details
-universityCtrl.courseDetails = (req, res) => {
+universityCtrl.courseDetails = async(req, res) => {
     res.render("at-university/courses/details");
 };
 
 // Start Course
-universityCtrl.startCourse = (req, res) => {
+universityCtrl.startCourse = async(req, res) => {
     res.render("at-university/courses/start");
 };
 

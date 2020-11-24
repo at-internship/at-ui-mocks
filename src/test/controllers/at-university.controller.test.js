@@ -1,56 +1,57 @@
-const assert = require('assert');
-const expect = require('chai').expect;
+const sinon = require("sinon");
+const chai = require("chai");
+const expect = require("chai").expect;
+const assert = require("assert");
 
 const universityController = require("../../controllers/at-university.controller");
+const universityServiceAPI = require("../../services/at-university.service");
 
-describe('Dashboard - Get All Courses - 200: ', () => {
+describe('TEST: at-univeristy.controller', () => {
+
+    let getAllCoursesStub;
+
+    beforeEach(function() {
+        getAllCoursesStub = sinon.stub(universityServiceAPI, "getAllTutorials");
+    });
+
+    afterEach(function() {
+        getAllCoursesStub.restore();
+    });
+
     it('Should Dashboard Get All Courses - 200', (done) => {
-
-        universityController.dashboard()
-            .end(function(err, res) {
-                // Response Status
-                expect(res).to.have.status(200);
-
-                done();
-            });
+        var res = { render: sinon.spy() };
+        var req = {};
+        var view = universityController.dashboard(req, res).then(function() {
+            expect(res.render.calledOnce).to.be.true;
+            done();
+        });
     });
-});
 
-describe('Career Details - 200: ', () => {
-    it('Should Career Details success render - 200', (done) => {
-
-        universityController.careerDetails()
-            .end(function(err, res) {
-                // Response Status
-                expect(res).to.have.status(200);
-
-                done();
-            });
+    it('Should Career Details success render - 200', function(done) {
+        var res = { render: sinon.spy() };
+        var req = {};
+        var view = universityController.careerDetails(req, res).then(function() {
+            expect(res.render.calledOnce).to.be.true;
+            done();
+        });
     });
-});
 
-describe('Course Details - 200: ', () => {
-    it('Should Course Details success render - 200', (done) => {
-
-        universityController.courseDetails()
-            .end(function(err, res) {
-                // Response Status
-                expect(res).to.have.status(200);
-
-                done();
-            });
+    it('Should Course Details success render - 200', function(done) {
+        var res = { render: sinon.spy() };
+        var req = {};
+        var view = universityController.courseDetails(req, res).then(function() {
+            expect(res.render.calledOnce).to.be.true;
+            done();
+        });
     });
-});
 
-describe('Start Course Details - 200: ', () => {
-    it('Should Start Course success render - 200', (done) => {
-
-        universityController.startCourse()
-            .end(function(err, res) {
-                // Response Status
-                expect(res).to.have.status(200);
-
-                done();
-            });
+    it('Should Start Course success render - 200', function(done) {
+        var res = { render: sinon.spy() };
+        var req = {};
+        var view = universityController.startCourse(req, res).then(function() {
+            expect(res.render.calledOnce).to.be.true;
+            done();
+        });
     });
+
 });
