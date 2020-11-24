@@ -5,7 +5,12 @@
     "main": "index.js",
     "scripts": {
         "start": "node src/index.js",
-        "dev": "nodemon src/index.js"
+        "dev": "nodemon src/index.js",
+        "test": "mocha src/test/**/*.test.js --check-leaks --recursive --exit",
+        "coverage": "nyc --reporter=html --reporter=text mocha src/**/*.js",
+        "coverage2": "nyc --reporter=html --reporter=text mocha src/**/*.test.js",
+        "coverage-controllers": "nyc --reporter=html --reporter=text mocha src/controllers/**/*.controller.js",
+        "coverage-test-controllers": "nyc --reporter=html --reporter=text mocha src/test/controllers/*.test.js"
     },
     "keywords": [],
     "author": "AgileThought",
@@ -13,14 +18,19 @@
     "dependencies": {
         "axios": "^0.20.0",
         "bcryptjs": "^2.4.3",
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
         "connect-flash": "^0.1.1",
         "datepicker-bootstrap": "^1.9.13",
         "express": "^4.17.1",
         "express-handlebars": "^3.1.0",
         "express-session": "^1.17.0",
+        "install": "^0.13.0",
         "method-override": "^3.0.0",
+        "mocha": "^8.2.1",
         "mongoose": "^5.8.9",
         "morgan": "^1.10.0",
+        "npm": "^6.14.9",
         "passport": "^0.4.1",
         "passport-local": "^1.0.0"
     },
@@ -28,6 +38,7 @@
         "dotenv": "^8.2.0",
         "handlebars": "^4.5.0",
         "nodemon": "^2.0.2",
-        "npm-check-updates": "^4.1.0"
+        "npm-check-updates": "^4.1.0",
+        "nyc": "^15.1.0"
     }
 }

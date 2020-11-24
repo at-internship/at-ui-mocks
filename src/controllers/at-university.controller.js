@@ -1,6 +1,6 @@
 const universityCtrl = {};
 
-const tutorialServiceAPI = require('../services/tutorial.service');
+const tutorialServiceAPI = require('../services/at-university.service');
 
 // Modules
 const passport = require("passport");

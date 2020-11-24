@@ -6,3 +6,5 @@ package-lock.json
 
 # environment variables
 .env
+.nyc_output/
+coverage/
