@@ -1,8 +1,11 @@
 /**
- * AT UI MOCKS
+ * AT UI MOCKS - AT University Service API.
+ * Copyright 2020 AgileThought, Inc.
  * 
- * Tutorial Service API.
+ * Functions for at-university-api endpoint.
  * 
+ * @author @at-internship
+ * @version 1.0
  */
 
 // Constants
@@ -21,6 +24,8 @@ console.log("TUTORIAL_SERVICE_URI:" + TUTORIAL_SERVICE_URI);
 /**
  * Function to retrieve All Tutorials from Tutorial Service API.
  * 
+ * @param
+ * @return {AxiosTransformer} Course reponse object on JSON format.
  */
 atCourseServiceAPI.getAllTutorials = () => {
     return axios({

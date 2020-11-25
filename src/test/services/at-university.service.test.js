@@ -1,3 +1,13 @@
+/**
+ * AT UI MOCKS - AT University Service API Test.
+ * Copyright 2020 AgileThought, Inc.
+ * 
+ * Integration Test for at-university-api endpoint.
+ * 
+ * @author @at-internship
+ * @version 1.0
+ */
+
 // Constants
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -8,10 +18,6 @@ chai.use(chaiHttp);
 const tutorialServiceAPI = 'https://at-university-api.herokuapp.com/api' + '/v1/course';
 const tutorialServiceAPI_400 = 'https://at-university-api.herokuapp.com/api' + '/v1/courses';
 
-/**
- * AT University Service Integration Test
- * 
- */
 describe('INTEGRATION TEST: at-univeristy.service', () => {
 
     it('Should Get All Courses - 200', (done) => {

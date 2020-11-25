@@ -1,3 +1,13 @@
+/**
+ * AT UI MOCKS - AT University Controller Test.
+ * Copyright 2020 AgileThought, Inc.
+ * 
+ * Unit Test for at-university-controller.
+ * 
+ * @author @at-internship
+ * @version 1.0
+ */
+
 // Constants
 const sinon = require("sinon");
 const chai = require("chai");
@@ -10,10 +20,6 @@ const universityController = require("../../controllers/at-university.controller
 // AT University Service API
 const universityServiceAPI = require("../../services/at-university.service");
 
-/**
- * AT University Controller Unit Test
- * 
- */
 describe('TEST: at-univeristy.controller', () => {
 
     let getAllCoursesStub;

@@ -1,3 +1,14 @@
+/**
+ * AT UI MOCKS - AT University Controller.
+ * Copyright 2020 AgileThought, Inc.
+ * 
+ * Functions for general at-university-controller.
+ * 
+ * @author @at-internship
+ * @version 1.0
+ */
+
+
 // AT University Controller
 const universityCtrl = {};
 
