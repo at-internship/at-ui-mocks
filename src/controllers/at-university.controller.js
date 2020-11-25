@@ -8,7 +8,6 @@
  * @version 1.0
  */
 
-
 // AT University Controller
 const universityCtrl = {};
 

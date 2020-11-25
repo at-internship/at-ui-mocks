@@ -22,7 +22,7 @@ const TUTORIAL_SERVICE_URI = process.env.TUTORIAL_SERVICE_URI;
 console.log("TUTORIAL_SERVICE_URI:" + TUTORIAL_SERVICE_URI);
 
 /**
- * Function to retrieve All Tutorials from Tutorial Service API.
+ * Function to retrieve All Courser from AT University Service API.
  * 
  * @param
  * @return {AxiosTransformer} Course reponse object on JSON format.
@@ -37,4 +37,4 @@ atCourseServiceAPI.getAllTutorials = () => {
     });
 };
 
-module.exports = courseService;
+module.exports = atCourseServiceAPI;
