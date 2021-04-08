@@ -11,6 +11,11 @@ resourcesCtrl.dashboard = (req, res) => {
     res.render("at-resources/dashboard");
 };
 
+// Dashboard
+resourcesCtrl.dashboard = (req, res) => {
+    res.render("at-resources/dashboard");
+};
+
 // Backlog
 resourcesCtrl.backlog = (req, res) => {
     res.render("at-resources/backlog");

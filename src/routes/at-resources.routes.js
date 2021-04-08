@@ -8,7 +8,7 @@ const {
     teams,
     mentors,
     metrics,
-    tests
+    tests,
 } = require("../controllers/at-resources.controller.js");
 
 const { isAdmin, isCareProvider } = require("../helpers/auth");
